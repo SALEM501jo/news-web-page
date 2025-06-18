@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon"type="x-icon" href="1370181.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <title>Gaza Now</title>
+    <style>
+      @font-face{
+         font-family:tijwal ;
+         src: url(Tajawal/Tajawal-Black.ttf);
+     }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            width: 100vw;
+            height: 900px;
+            background-image: linear-gradient(to bottom, #f5f5f5, #f7f7f7, #f8f9f8, #fafafa, #fcfcfc, #eae9ea, #d8d7d8, #c6c5c6, #9d9c9d, #767475, #514f50, #2f2d2d);
+        }
+        .header{
+            background-image:linear-gradient(to right ,red 40%,rgb(225, 151, 14) ,rgb(255, 183, 0));
+            width: 100vw;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            height: 45px;
+            top: 0px;
+            
+            }
+         .header_f{
+            border: 2px hidden black;
+            height: 40px;
+            width: 200px;
+            
+         }
+         .header_f h1{
+            position: absolute;
+            margin-top: 8px;
+            margin-left: 50px;
+            letter-spacing: 3px;
+            align-items: center;
+
+            color: #fff;
+            font-size: 25px;
+            font-weight: 600px;
+         }
+      
+         .header_t{
+            border: 2px hidden black;
+            width: fit-content;
+            margin-left:80%;
+            margin-top: -30px;
+            font-size: 25px;
+            position: relative;
+            
+         }
+
+         .second_header{
+            border-bottom: 2px hidden black;
+            box-shadow: 10px 1px 20px gray;
+            height: 90px;
+
+            
+         }
+         .title_h{
+            width: fit-content;
+            font-size: 60px;
+            margin-left: 45px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            background-image: linear-gradient(to right ,red,rgb(225, 151, 14),rgb(255, 183, 0));
+            font-family:poppins;
+            text-transform: uppercase;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+         }
+         .nav_bar{
+            border: 2px hidden black;
+            width:fit-content;
+            margin-left: 75%;
+            margin-top: -60px;
+         }
+         .navbar a{
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+            text-decoration: none;
+            margin-left: 40px;
+         }
+         .main_news{
+            border: 2px hidden black;
+            width: 600px;
+            height: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            background-image:url(_131534763_gettyimages-1745438031.jpg);
+            background-size: cover;
+            animation-name:background_slide;
+            animation-duration: 30s;
+            animation-iteration-count: 50;
+            animation-direction:normal;
+            box-shadow: 5px 2px 20px rgb(206, 157, 64);
+            border-radius: 10px;
+         }
+         @keyframes background_slide{
+            0%{
+             background-image: url(img6.jpg);
+            }
+            25%{
+               background-image: url(img2.jpg);
+            }
+            50%{
+               background-image: url(img3.jpg);
+            }
+            75%{
+               background-image: url(img4.jpg);
+            }
+            100%{
+               background-image: url(img5.jpeg);
+            }
+         }
+         .head_liens{
+            width: fit-content;
+            border-bottom: 2px hidden black;
+            border-right: 2px hidden black;
+            box-shadow: 3px 3px 5px rgb(0, 0, 0);
+            height: 30px;
+            width: 200px;
+            background-color: red;
+            animation-name: head_liens;
+            animation-duration:3s;
+            animation-iteration-count: 50;
+            animation-direction: normal;
+            border-radius: 3px;
+         }
+         @keyframes head_liens{
+            0% {
+               background-color: red;
+               color: white;
+            }
+            50%{
+               background-color: white;
+               color: red;
+            }
+            100%{
+               background-color: red;
+               color: white;
+            }
+         }
+         .head_liens p{
+            margin-left: 50px;
+            font-size: 20px;
+            color: #fff;
+            width: fit-content;
+            border: 1px hidden black;
+            animation-name: head_liens;
+            animation-duration:3s;
+            animation-iteration-count: 50;
+            animation-direction: normal;
+            font-family: poppins;
+
+         }
+         .char{
+            border: 2px hidden white;
+            width: fit-content;
+            margin-top: 450px;
+            background-image: linear-gradient(to right ,red 40%,rgb(206, 157, 64) ,rgb(230, 223, 205));
+            box-shadow: 5px 1px 5px black;
+            border-radius: 5px;
+         }
+        .char h1{
+            color: white;
+            font-size: 40px;
+            padding: 5px;
+        }
+        .left_side{
+         border: 2px hidden black;
+         width: 270px;
+         height: 550px;
+         margin-top: -570px;
+         margin-left: 150px;
+        }
+        .pics{
+         border: 2px hidden black;
+         margin-top: 25px;
+         height: 25%;
+         border-radius: 5px;
+         box-shadow: 5px 2px 15px rgb(206, 157, 64);;
+        }
+        .pics img{
+         width: 100%;
+         border-radius: 5px;
+         }
+         .pics h4{
+         margin-top: -40px;
+         color: white;
+         margin-left: 10px;
+         }
+
+        .latest_news{
+         border: 2px hidden rgb(0, 0, 0);
+         background-color: rgb(255, 0, 0);
+         height: 50px;
+         border-radius: 5px;
+         animation-name: head_liens;
+         animation-duration:3s;
+         animation-iteration-count: 50;
+         animation-direction: normal;
+        }
+        .latest_news h2{
+         font-size: 30px;
+         margin-left: 15%;
+         margin-top: 5px;
+         font-family: poppins;
+        }
+        .right_side{
+         border: 2px hidden rgb(0, 0, 0);
+         width: 270px;
+         height: 550px;
+         margin-top: -520px;
+         margin-left: 1115px;
+        }
+        .help{
+         background-color: red;
+         box-shadow: 5px 2px 15px rgb(206, 157, 64);;
+         height: fit-content;
+         border-radius: 5px;
+         border: 2px hidden rgb(0, 0, 0);
+        }
+        .help a{
+         font-family: poppins;
+         font-size: 25px;
+         margin-left: 5px;
+         color: #ffff;
+         text-decoration: none; 
+        }
+        .help a:hover{
+         text-decoration:underline;
+         transition: 2s ease-out;
+         color: black;
+        }
+        
+        .pics1{
+         border: 2px hidden black;
+         margin-top: 25px;
+         height: 25%;
+         border-radius: 5px;
+         box-shadow: 5px 2px 15px rgb(206, 157, 64);;
+        }
+        .imgs1{
+         width: 100%;
+         height: 100%;
+         border-radius: 5px;
+         
+        }
+        .h4h{
+         margin-top: -40px;
+         color: white;
+         margin-left: 7px;
+        }
+        .pics2{
+         border: 2px hidden black;
+         margin-top: 25px;
+         height: 25%;
+         border-radius: 5px;
+         box-shadow: 5px 2px 15px rgb(206, 157, 64);;
+        }
+        .pics3{
+         border: 2px hidden black;
+         margin-top: 25px;
+         height: 25%;
+         border-radius: 5px;
+         box-shadow: 5px 2px 15px rgb(206, 157, 64);;
+        }
+        .pics5{
+         border: 2px hidden black;
+         margin-top: 25px;
+         height: 25%;
+         border-radius: 5px;
+         box-shadow: 5px 2px 15px rgb(206, 157, 64);;
+        }
+        .pics6{
+         border: 2px hidden black;
+         margin-top: 25px;
+         height: 20%;
+         border-radius: 5px;
+         box-shadow: 1px 1px 5px rgb(206, 157, 64);;
+        }
+        .pics6:hover{
+         box-shadow: 5px 2px 15px rgb(0, 0, 0);;
+         transition: 0.5s;
+         margin-top: 20px;
+        }
+        .a1{
+         text-decoration: none;
+         color: white;
+        }
+        .a1:hover{
+         text-decoration: underline;
+         color: red;
+         text-shadow: 2px 1px 2px rgb(206, 157, 64);
+         transition: 2s;
+        }
+        .sp1{
+         color: black
+        }
+        .paper{
+         font-family: tijwal;
+         color: #2f2d2d;
+         position: relative;
+         font-size: 16px;
+         border: 2px hidden black;
+         width: 100%;
+         height: 100%;
+        }
+        .a2{
+         text-decoration: none;
+         position: relative;
+         left: 16px;
+         color: black;
+         top: 5px;
+        }
+        .a2:hover{
+         text-decoration: underline;
+         color: rgb(255, 0, 0);
+         transition: 0.5s;
+        }
+        .h61{
+         opacity: 90%;
+         color: gray;
+         font-size: 12px;
+         position: relative;
+         top: -15px;
+         left: 10px;
+        }
+        .h61:hover{
+         opacity: 100%;
+         color: red;
+         font-size: 15px;
+         transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+   <div class="header">
+    <div class="header_f">
+        <h1 id="current-time"></h1>
+    </div> 
+   </div>
+   <div class="second_header">
+   <div class="title_h">
+         Gaza Now
+    </div>
+    <div class="nav_bar">
+        <nav class="navbar">
+            <a href="main_page.html">Home</a>
+            <a href="about_us.html">About Us</a>
+        </nav>
+    </div>
+   </div>
+   <div class="main_news">
+   <div class="head_liens">
+    <p>Head lines</p>
+   </div>
+   <div class="char">
+    <h1> أبرز الشخصيات في الحرب على غزة</h1>
+   </div>
+   
+   </div>
+   <div class="left_side">
+      <div class="latest_news">
+         <h2>Latest News</h2>
+      </div>
+      <div class="pics">
+         <img class="imgs1" src="isr.jpg">
+         <h4 class="h4h"><a class="a1" href="page2.html">مظاهرات كبيرة للمطالبة بوقف فوري لإطلاق النار في غزة</a></h4>
+      </div>
+      <div class="pics1">
+         <img class="imgs1" src="img10.jpg">
+         <h4 class="h4h">
+            <a class="a1" href="page5.html">
+            المرصد الأورومتوسطي: 100 ألف ضحية في 100 يوم من الحرب على غزة
+            </a>
+         </h4>
+
+      </div>
+      <div class="pics2">
+         <img src="gaza3.jpg"  class="imgs1">
+         <h4 class="h4h"><a class="a1" href="page4.html">كيف تحوّلت جنوب أفريقيا إلى "محبوبة العرب" على مواقع التواصل؟</a></h4>
+      </div>
+   </div>
+  <div class="right_side">
+   <div class="help">
+       <a href="https://www.islamic-relief.me/palestine-emergency-appeal/">Donate to people in Gaza: <span class="sp1"> click Here</span></a>
+   </div>
+   <div class="pics3">
+   <img src="jor.webp" class="imgs1">
+   <h4 class="h4h"><a class="a1" href="page3.html">الأردنيون يواصلون الوقفات التضامنية مع أهل غزة</a></h4>
+   </div>
+
+   <div class="pics6">
+    <h3 class="paper">
+      <a href="https://www.bbc.com/arabic/live/67224348" class="a2">
+         الجيش الإسرائيلي يرتكب "مجزرة" بقتل حوالي 400 فلسطيني في ليلة واحدة
+      </a>
+   </h3>
+   <h6 class="h61">2023/12/12</h6>
+   </div>
+   <div class="pics6">
+      <h3 class="paper">
+         <a style=" font-size: 22px; " href="https://www.bbc.com/arabic/articles/cz7xj5z7d0do" class="a2">
+            ما هي آخر تطورات الحرب في غزة؟</a>
+      </h3>
+      <h6 class="h61">2023/12/12</h6>
+   </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script>
+    let time= document.getElementById("current-time");
+    
+    setInterval(() =>{
+        let d = new Date();
+        time.innerHTML = d.toLocaleTimeString();
+    },1000)
+</script>
+
+
+
+</body>
+</html>
